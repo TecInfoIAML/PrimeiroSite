@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+    <head>
+        <meta charset="UFT-8">
+        <title>Interação com Links</title>
+    </head>
+    <body>
+        <center>
+        <h1>Conceito de links</h1>
+        
+        <p>Os links são utilizados para conectar páginas web. Para isso utilizamos a tag &lt a &gt chamada de tag âncora. Os atributos que precisamos configurar na  tag âncora: <b>href:</b> para inserirmos a url a ser carregada e <b>target:</b> para indicarmos se a nova página abrirá na mesma janela ou em janela diferente</p>
+        <br>
+        <p><b>target=</b> _blank (abre em outra guia)</p>
+        <p><b>target=</b> _self (abre na guia atual)</p>
+        <p>Quando <b>não</b> colocamos o atributo <b>target</b> o padrão self é aplicado, e a página é aberta na janela atual.</p>
+
+        <h5>Veja um exemplo:</h5>
+
+        <h4>Conheça a unidade SENAI onde eu estudo:</h4>
+        <img src="src\imagens\senai.jpeg" alt="Imagem da entrada do SENAI Paulínia" width="550" height="550">
+        <p>Click no link abaixo e abra a página SENAI Paulínia em outra janela.</p>
+        <!--Tag <a> ou tag âncora serve para ligarmos o conteúdo de uma página à outra-->
+        <a href="https://sp.senai.br/unidade/paulinia/" target="_blank">Acesse SENAI Paulínia</a>
+
+        <p>Click no link abaixo e abra a página de Cursos do SENAI Paulínia nesta janela.</p>
+
+        <a href="https://sp.senai.br/cursos/0/0?cidadeint=paulinia&pag=2" target = "_self">Acesse os Curso Senai Paulínia</a>
+    </center>
+    <br>
+    <center>
+        <h1> Conceito de incorporação de videos </h1>
+        <br>
+        <p>Similar a incorporar uma imagem à página web, a incorporação de videos é a ideia de inserir um video em sua página Web que possa ser visto no navegador.</p>
+        <br>
+        <p>Temos duas forms de incorporação,pela tag <b>video</b> e pela tag <b>iframe</b>. O primeiro video abaixo foi incoporado pela tag video, sendo que ele está armazenado <b>localmente</b> no diretório de nosso projeto. Já o segundo vídeo foi incorporado pela tag de incorporação fornecida no compartilhamento de videos no YouTube </p>
+    </center>
+    <center>
+        <h3>Veja como foi a inaulguração do SENAI Paulínia!</h3>
+        <!--Video que está no armazenamento local-->
+        <video src="src\videos\inauguracaoSENAI.mp4"
+        width="600" height="300" type ="video/mp4"controls></video>
+    </center>
+    <br>
+    <center>
+        <!--Video incorporado diretamente do you tube, por meio do acesso compartilhar-->
+        <h3>O que é o SENAI? Veja no vídeo a seguir:</h3>
+        <iframe width="600" height="300" src="https://www.youtube.com/embed/1hbzT3T1Vcs?si=W8b3g5gUNtAO2WWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </center>
+    
+    <br>
+    <center>
+        <div><!--A tag div organiza os elementos dentro dela lado a lado-->
+            <button>Página Inicial</button>
+            <button>Entrada de Dados</button>
+        </div>
+    </center>
+    </body>
+</html>

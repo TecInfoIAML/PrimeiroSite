@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <title>Entrada de dados</title>
+    
+    
+</head>
+<body>
+    <center>
+    <h1>Formulários e Entrada de Dados</h1>
+    <br>
+    <br>
+        <img src="src\imagens\entradaDados.jpg" width="500"height="400" alt="Imagem de pastas e formulários representando a entrada de dados">
+    <p> Os <b>formulários</b> em html são representados pela tag <b>input</b>, ela possui diferentes entradas de dados: <i>texto, número, e-mail, senhas </i> entre outros.
+        <br>
+    Toda vez que criamos uma tag input ela cria uma <i>caixa de entrada</i>.
+        <br>
+        <br>
+        <input type="text" placeholder="Este é um ex. de cx. de entrada" name="cx_exemplo">
+        <br>
+        <br>
+    A tag input ela tem os parâmetros: <b>type</b>, para indicar que tipo de informação será inserida (<i>text, password, checkbox, radio, number, e-mail</i>),bem como o campo de <b>placeholder</b>, é como se fosse uma <i>dica</i> para o usuário de qual informação precisa ser inserida ali, após clicar no campo esse texto desaparece.
+    </p>
+    <h3>Caixas de Entrada e tipos de dados</h3>
+    <p>
+        Caixa de entrada para texto:
+        <br>
+        <br>
+        <input type="text" placeholder="Digite seu nome" name="cx_nome">
+        <br>
+        <br>
+    </p>
+    <p>
+        Caixa de entrada para senhas:
+        <br>
+        <br>
+        <input type="password" placeholder="Digite sua senha" name="cx_senha">
+        <br>
+        <br>
+    </p>
+    <p>
+        Caixa de entrada do tipo check box:
+        <br>
+        <br>
+        <label>
+            <input type="checkbox" value="Sim" name="cx_check_sim"> Sim
+        </label>
+        <label>
+            <input type="checkbox" value="Não" name="cx_check_nao"> Não
+        </label>
+        <label>
+            <input type="checkbox" value="Talvez" name="cx_check_talvez"> Talvez
+        </label>
+        <br>
+        <br>
+    </p>
+    <p>
+        Caixa de entrada do tipo radio:
+        Para que o usuário tenha de escolher somente uma opção, as caixas de entrada das opções do tipo radio deverão ter o mesmo name.
+        <br>
+        <br>
+        <label>
+            <input type="radio" value="Sim" name="cx_radio"> Sim
+        </label>
+        <label>
+            <input type="radio" value="Não" name="cx_radio"> Não
+        </label>
+        <label>
+            <input type="radio" value="Talvez" name="cx_radio"> Talvez
+        </label>
+        <br>
+        <br>
+    </p>
+
+    <p>
+        Caixa de entrada para números:
+        <br>
+        <br>
+        <input type="number" placeholder="Digite seu cpf" name="cx_cpf">
+        <br>
+        <br>
+    </p>
+
+    <p>
+        Caixa de entrada para email:
+        Para que você "force" o usuário a digitar a informação de email antes de clicar em enviar 
+        coloque o atributo required ao final.
+        Também poderá criar uma input, uma entrada de dados para enviar a informação, essa entrada terá como type submit.
+        <br>
+        <br>
+            <input type="email" id="email" name="email" required>
+            <input type="submit" value="Enviar" id="btn_input_enviar">
+        <br>
+        <br>
+    </p>
+    <p>
+        Caixa de entrada para upload de arquivos:
+        <br>
+        <br>
+        <form action="Documentos" method="POST" enctype="multipart/form-data">
+            <label for="arquivo">Escolha um arquivo </label>
+            <input type="file" id="arquivo" name="arquivo" accept=".pdf,.doc,.docs,.mp3,.mp4,.jpg,.png,.jpeg">
+            <input type="submit" value="Enviar">
+        </form>
+        <br>
+        <br>
+    </p>
+    <p>
+        Caixa de entrada para avaliação:
+        <br>
+        <br>
+            <div class="estrelas">
+            <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+            <label for="cm_star-1"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-1" name="fb" value="1"/>
+            <label for="cm_star-2"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-2" name="fb" value="2"/>
+            <label for="cm_star-3"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-3" name="fb" value="3"/>
+            <label for="cm_star-4"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-4" name="fb" value="4"/>
+            <label for="cm_star-5"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-5" name="fb" value="5"/>
+          </div>
+        <br>
+        <br>
+    </p>
+ 
+</center>
+</body>
+</html>
